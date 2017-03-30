@@ -12,4 +12,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD) //can use in method only.
 public @interface AuditLogging {
+    String expression();
 }

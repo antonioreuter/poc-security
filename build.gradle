@@ -52,13 +52,9 @@ dependencyManagement {
 }
 
 dependencies {
-
-
     compile group: 'com.h2database', name: 'h2'
     compile group: 'commons-validator', name: 'commons-validator', version: '1.5.1'
-
-    compile('org.springframework.cloud:spring-cloud-starter-hystrix-dashboard')
-    compile('org.springframework.cloud:spring-cloud-starter-hystrix')
+    compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
 
     compile(group: 'org.springframework.boot', name: 'spring-boot-starter-aop')
     compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web') {
